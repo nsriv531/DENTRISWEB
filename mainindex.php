@@ -10,6 +10,7 @@
 	</head>
 	<body style="margin: 50px;">
 		<h1>DATA</h1>
+		<a class = "btn btn-primary" href="/create.php" role="button">New Row</a>
 		<br>
 		<table class="table">
 			<thead>
@@ -21,6 +22,7 @@
 				<th>Password Expiry Date</th>
 				<th>Reccuring Fields</th>
 				<th>Exp Date</th>
+				<th>Website Link</th>
 				<th>Action</th>
 			</tr>
 			</thead>
@@ -59,6 +61,7 @@
 			<td>" . $row["pw_expiray_date"] . "</td>
 			<td>" . $row["reccuring_fields"] . "</td>
 			<td>" . $row["exp_date"] . "</td>
+			<td><a href =" .$row["website_link"]. ">" .$row["website_link"]. "</a></td>
 			<td>
 				<a class='btn btn-primary btn-sm' href='update'>Update</a>
 				<a class='btn btn-primary btn-sm' href='delete'>Delete</a>
